@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EcoEspresso.Domain.Commons;
 
-namespace EcoEspresso.Domain.Entities
+namespace EcoEspresso.Domain.Entities;
+
+public class Admin : Auditable
 {
-    internal class Admin
-    {
-    }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string PhoneNumber { get; set; }
+    public string PasswordHash { get; set; }
+    public string Salt { get; set; }
 }
