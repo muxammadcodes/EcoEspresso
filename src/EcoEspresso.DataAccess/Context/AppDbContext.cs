@@ -24,6 +24,5 @@ public class AppDbContext : DbContext
             .HasForeignKey(m => m.MealInfo.Id)
             .HasForeignKey(m => m.Chef)
             .OnDelete(DeleteBehavior.NoAction);
-
     }
 }
