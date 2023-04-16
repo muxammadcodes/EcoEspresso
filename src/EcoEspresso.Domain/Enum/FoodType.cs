@@ -1,6 +1,6 @@
 ﻿namespace EcoEspresso.Domain.Enum
 {
-    internal enum FoodType
+    public enum FoodType
     {
         CasualDining,
         FastCasual,
