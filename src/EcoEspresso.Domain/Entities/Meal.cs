@@ -12,4 +12,6 @@ public class Meal : Auditable
     public int ChefId { get; set; }
     public Chef Chef { get; set; }
 
+    public virtual MealInfo FoodInformation { get; set; }
+
 }
