@@ -9,4 +9,7 @@ public class Meal : Auditable
     public decimal Price { get; set; }
     public int MealInfoId { get; set; }
     public  MealInfo MealInfo { get; set; }
+    public int ChefId { get; set; }
+    public Chef Chef { get; set; }
+
 }
