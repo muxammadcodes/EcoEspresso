@@ -9,5 +9,6 @@ namespace EcoEspresso.Domain.Entities
         public string Name { get; set; }
         public string Country { get; set; }
         public FoodType Type { get; set; }
+
     }
 }
