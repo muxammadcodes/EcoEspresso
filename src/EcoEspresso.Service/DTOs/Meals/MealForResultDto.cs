@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EcoEspresso.Domain.Entities;
 
 namespace EcoEspresso.Service.DTOs.Meals
 {
-    internal class MealForResultDto
+    public class MealForResultDto
     {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public int Count { get; set; }
+        public decimal Price { get; set; }
+        public int ChefId { get; set; }
     }
 }
