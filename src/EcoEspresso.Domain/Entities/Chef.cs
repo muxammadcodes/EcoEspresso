@@ -4,13 +4,12 @@ namespace EcoEspresso.Domain.Entities
 {
     public class Chef : Auditable
     {
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public string Email { get; set; }
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
         public decimal Salary { get; set; }
-        public string Password { get; set; }
-        public string Salt { get; set; }
-
+        public string Password { get; set; } = string.Empty;
+        public string Salt { get; set; } = string.Empty;
 
         public virtual ICollection<Meal> Meals { get; set; }
     }

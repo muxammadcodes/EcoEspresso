@@ -1,17 +1,16 @@
 ﻿using EcoEspresso.Domain.Commons;
+using System.Diagnostics;
 
 namespace EcoEspresso.Domain.Entities;
 
 public class Meal : Auditable
 {
-    public string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
     public int Count { get; set; }
     public decimal Price { get; set; }
-    public int MealInfoId { get; set; }
-    public  MealInfo MealInfo { get; set; }
+
     public int ChefId { get; set; }
-    public Chef Chef { get; set; }
+    public Chef Chef { get; set; } = default!;
 
-    public virtual MealInfo FoodInformation { get; set; }
-
+    public FoodInfotmation FoodInfotmation { get; set;} = default!;
 }
