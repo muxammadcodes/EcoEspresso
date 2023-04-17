@@ -6,10 +6,9 @@ namespace EcoEspresso.Domain.Entities
 {
     public class FoodInfotmation : Auditable
     {
-        public string Name { get; set; }
-        public string Country { get; set; }
+        public int MealId { get; set; }
+        public Meal Meal { get; set; } = default!;
+        public string Country { get; set; } = string.Empty;
         public FoodType Type { get; set; }
-
-        public virtual ICollection<Meal> Meals { get; set; }
     }
 }
