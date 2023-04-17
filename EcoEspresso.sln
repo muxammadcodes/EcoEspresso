@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoEspresso.Domain", "src\EcoEspresso.Domain\EcoEspresso.Domain.csproj", "{4B4F6392-65BD-4FBF-A482-CB2BF57562B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcoEspresso.Domain", "src\EcoEspresso.Domain\EcoEspresso.Domain.csproj", "{4B4F6392-65BD-4FBF-A482-CB2BF57562B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoEspresso.DataAccess", "src\EcoEspresso.DataAccess\EcoEspresso.DataAccess.csproj", "{24D6AC2A-5500-47CC-AFC4-3A7BED4275D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcoEspresso.DataAccess", "src\EcoEspresso.DataAccess\EcoEspresso.DataAccess.csproj", "{24D6AC2A-5500-47CC-AFC4-3A7BED4275D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoEspresso.Service", "src\EcoEspresso.Service\EcoEspresso.Service.csproj", "{953A8A39-E025-4DA9-BA23-E5A7D05D926B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcoEspresso.Service", "src\EcoEspresso.Service\EcoEspresso.Service.csproj", "{953A8A39-E025-4DA9-BA23-E5A7D05D926B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoEspresso.Web1", "src\EcoEspresso.Web1\EcoEspresso.Web1.csproj", "{9588CD90-EEE5-459B-A050-3E1AA749D9E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcoEspresso.Web", "src\EcoEspresso.Web1\EcoEspresso.Web.csproj", "{9588CD90-EEE5-459B-A050-3E1AA749D9E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
