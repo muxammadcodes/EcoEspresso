@@ -7,10 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commons\Extensions\" />
     <Folder Include="DTOs\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EcoEspresso.Domain\EcoEspresso.Domain.csproj" />
   </ItemGroup>
 
 </Project>
