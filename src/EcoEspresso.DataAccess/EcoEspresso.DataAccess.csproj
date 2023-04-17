@@ -22,8 +22,4 @@
     <ProjectReference Include="..\EcoEspresso.Domain\EcoEspresso.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>
