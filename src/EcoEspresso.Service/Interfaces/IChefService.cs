@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EcoEspresso.Service.DTOs.Chefs;
 
 namespace EcoEspresso.Service.Interfaces
 {
-    internal class IChefService
+    public interface IChefService
     {
+        public ValueTask<ChefFotResultDto> AddAsync(ChefForCreationDto dto);
+        public ValueTask<ChefFotResultDto> RetrieveByIdAsync(int id);
+        public ValueTask<IEnumerable<ChefFotResultDto>> RetrieveAllAsync();
+        public ValueTask<bool> DeleteAsync(int id);
+        public ValueTask<bool> ModifyAsync(int id, ChefForCreationDto dto);
     }
 }
