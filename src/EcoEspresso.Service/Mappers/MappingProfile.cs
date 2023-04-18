@@ -1,12 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutoMapper;
+using EcoEspresso.Domain.Entities;
+using EcoEspresso.Service.DTOs;
+using EcoEspresso.Service.DTOs.Chefs;
+using EcoEspresso.Service.DTOs.FoodInformations;
+using EcoEspresso.Service.DTOs.Meals;
 
 namespace EcoEspresso.Service.Mappers
 {
-    internal class MappingProfile
+    public class MappingProfile : Profile
     {
+        public MappingProfile()
+        {
+            CreateMap<Meal, MealForCreationDto>().ReverseMap();
+            CreateMap<Meal,MealForResultDto>().ReverseMap();
+            CreateMap<Chef,ChefForCreationDto>().ReverseMap();
+            CreateMap<Chef,ChefFotResultDto>().ReverseMap();
+            CreateMap<FoodInfotmation,FoodInformationCreatDto>().ReverseMap();
+            CreateMap<FoodInfotmation, FoodInformationForResultDto>().ReverseMap();  
+        }
     }
 }
