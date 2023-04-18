@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EcoEspresso.Service.DTOs.FoodInformations;
 
 namespace EcoEspresso.Service.Interfaces
 {
-    internal interface IFoodInformationService
+    public interface IFoodInformationService
     {
+        public ValueTask<FoodInformationForResultDto> AddAsync(FoodInformationCreatDto dto);
+        public ValueTask<FoodInformationForResultDto> RetrieveByIdAsync(int id);
+        public ValueTask<IEnumerable<FoodInformationForResultDto>> GetAllAsync();
+        public ValueTask<bool> DeleteAsync(int id);
+        public ValueTask<bool> ModifyAsync(int id,FoodInformationCreatDto dto);
+
     }
 }
