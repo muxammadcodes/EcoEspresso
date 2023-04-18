@@ -43,11 +43,11 @@ public class AppDbContext : DbContext
 
         List<Chef> chefs = new List<Chef>
         {
-            new Chef {Id = 1, FirstName = "Aziz", LastName = "Karimov", Email = "azizkarimov@example.com", Salary = 5000.00m, Password = "password1", Salt = "salt1",CreatedAt=DateTime.UtcNow },
-            new Chef {Id = 2, FirstName = "Shahzoda", LastName = "Abdullaeva", Email = "shahzodaabdullaeva@example.com", Salary = 6000.00m, Password = "password2", Salt = "salt2",CreatedAt=DateTime.UtcNow  },
-            new Chef {Id = 3, FirstName = "Jamshid", LastName = "Xolmatov", Email = "jamshidxolmatov@example.com", Salary = 7000.00m, Password = "password3", Salt = "salt3",CreatedAt=DateTime.UtcNow  },
-            new Chef {Id = 4, FirstName = "Nargiza", LastName = "Saidova", Email = "nargizasaidova@example.com", Salary = 5500.00m, Password = "password4", Salt = "salt4",CreatedAt=DateTime.UtcNow  },
-            new Chef {Id = 5, FirstName = "Dilshod", LastName = "Rahmonov", Email = "dilshodrahmonov@example.com", Salary = 8000.00m, Password = "password5", Salt = "salt5",CreatedAt=DateTime.UtcNow  },
+            new Chef {Id = 1, FirstName = "Aziz", LastName = "Karimov", Email = "azizkarimov@example.com", Salary = 5000.00m, PasswordHash = "password1", Salt = "salt1",CreatedAt=DateTime.UtcNow },
+            new Chef {Id = 2, FirstName = "Shahzoda", LastName = "Abdullaeva", Email = "shahzodaabdullaeva@example.com", Salary = 6000.00m, PasswordHash = "password2", Salt = "salt2",CreatedAt=DateTime.UtcNow  },
+            new Chef {Id = 3, FirstName = "Jamshid", LastName = "Xolmatov", Email = "jamshidxolmatov@example.com", Salary = 7000.00m, PasswordHash = "password3", Salt = "salt3",CreatedAt=DateTime.UtcNow  },
+            new Chef {Id = 4, FirstName = "Nargiza", LastName = "Saidova", Email = "nargizasaidova@example.com", Salary = 5500.00m, PasswordHash = "password4", Salt = "salt4",CreatedAt=DateTime.UtcNow  },
+            new Chef {Id = 5, FirstName = "Dilshod", LastName = "Rahmonov", Email = "dilshodrahmonov@example.com", Salary = 8000.00m, PasswordHash = "password5", Salt = "salt5",CreatedAt=DateTime.UtcNow  },
             // Add more chefs as needed
         };
         modelBuilder.Entity<Chef>().HasData(chefs);
