@@ -1,4 +1,6 @@
-﻿using System.Runtime.CompilerServices;
+﻿using EcoEspresso.Service.Interfaces;
+using EcoEspresso.Service.Services;
+using System.Runtime.CompilerServices;
 
 namespace EcoEspresso.Web.Extensions
 {
@@ -6,6 +8,7 @@ namespace EcoEspresso.Web.Extensions
     {
         public static void AddServices(this IServiceCollection services)
         {
+            services.AddScoped<IMealService, MealService>();
         }
     }
 }

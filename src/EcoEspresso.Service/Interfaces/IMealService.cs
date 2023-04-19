@@ -14,6 +14,6 @@ namespace EcoEspresso.Service.Interfaces
         public ValueTask<MealForResultDto> RetrieveByIdAsync(int id);
         public ValueTask<IEnumerable<MealForResultDto>> GetAllAsync();
         public ValueTask<bool> DeleteAsync(int id);
-        public ValueTask<bool> ModifyAsync(int id, MealForCreationDto dto);
+        public ValueTask<MealForResultDto> ModifyAsync(int id, MealForCreationDto dto);
     }
 }
