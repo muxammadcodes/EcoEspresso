@@ -8,7 +8,7 @@ namespace EcoEspresso.Web.Extensions
     {
         public static void AddServices(this IServiceCollection services)
         {
-            services.AddScoped<IMealService, MealService>();
+            services.AddScoped<IMealService, MealService>();da
         }
     }
 }
