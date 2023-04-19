@@ -1,4 +1,6 @@
 using EcoEspresso.DataAccess.Context;
+using EcoEspresso.Service.Mappers;
+using EcoEspresso.Web.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.ComponentModel;
@@ -14,6 +16,13 @@ builder.Services.AddSwaggerGen();
 // Adding Connection with Database
 builder.Services.AddDbContext<AppDbContext>(option =>
    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddServices();
+builder.Services.AddRepositories();
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

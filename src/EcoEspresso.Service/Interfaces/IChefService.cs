@@ -6,8 +6,8 @@ namespace EcoEspresso.Service.Interfaces
     {
         public ValueTask<ChefFotResultDto> AddAsync(ChefForCreationDto dto);
         public ValueTask<ChefFotResultDto> RetrieveByIdAsync(int id);
-        public ValueTask<IEnumerable<ChefFotResultDto>> RetrieveAllAsync();
+        public IEnumerable<ChefFotResultDto> RetrieveAll();
         public ValueTask<bool> DeleteAsync(int id);
-        public ValueTask<bool> ModifyAsync(int id, ChefForCreationDto dto);
+        public ValueTask<ChefFotResultDto> ModifyAsync(int id, ChefForCreationDto dto);
     }
 }
